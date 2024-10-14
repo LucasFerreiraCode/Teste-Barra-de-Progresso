@@ -13,7 +13,6 @@ html, body {
 body {
     background-color: grey;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -46,4 +45,12 @@ input {
     border-radius: 20px;
     border: none;
     display: block;
+}
+
+.btn-muda-cor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }

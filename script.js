@@ -15,3 +15,13 @@ function resetarProgresso() {
     progresso.style.width = "0%";
     input.value = "";
 }
+
+
+let coresFundo = ["blue", "red", "green", "black"]
+let indiceCor = 0;
+function colorirFundo () {
+    document.body.style.backgroundColor = coresFundo[indiceCor]
+
+}
+
+document.querySelector(".mudar-cor").onclick = colorirFundo;
