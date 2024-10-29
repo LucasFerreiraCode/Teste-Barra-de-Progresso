@@ -17,11 +17,12 @@ function resetarProgresso() {
 }
 
 
-let coresFundo = ["blue", "red", "green", "black"]
+let coresFundo = ["Blue", "Red", "Green", "Black", "Yellow"]
 let indiceCor = 0;
 function colorirFundo () {
-    document.body.style.backgroundColor = coresFundo[indiceCor]
+    document.body.style.backgroundColor = coresFundo[indiceCor];
 
+    indiceCor = (indiceCor +1 ) % coresFundo.length;
 }
 
 document.querySelector(".mudar-cor").onclick = colorirFundo;
